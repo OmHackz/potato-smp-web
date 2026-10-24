@@ -7,8 +7,6 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# Re-run on the latest commit if the previous deploy failed
-# concurrency: cancel in-progress runs on the same branch
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -44,34 +42,33 @@ jobs:
         continue-on-error: true
 
       - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
+          name: dist
           path: dist
 
-  # GitHub's "Deploy to Cloudflare Pages" workflow (github-deploy-pages)
-  # deploys the Pages artifact. On first setup you create a Cloudflare Pages
-  # project named `potato-smp` and link it to this repo with an empty
-  # framework preset, then add this secret:
-  #   CLOUDFLARE_API_TOKEN   — an API token with Account Pages:Edit
-  #   CLOUDFLARE_ACCOUNT_ID  — the Cloudflare account id
-  # The Pages project auto-deploys when the artifact is published.
-  #
-  # If you prefer to deploy explicitly with Wrangler instead of
-  # github-deploy-pages, uncomment this job and create the Cloudflare
-  # Pages project with `wrangler pages project create potato-smp`
-  # (build output dir is `dist`):
-  #
-  # deploy:
-  #   if: github.event_name != 'pull_request'
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - uses: actions/setup-node@v4
-  #       with: { node-version: 22, cache: npm }
-  #     - run: npm ci && npm run build
-  #     - name: Deploy to Cloudflare Pages
-  #       uses: cloudflare/wrangler-action@v3
-  #       with:
-  #         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-  #         command: pages deploy dist --project-name=potato-smp
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: pages deploy dist --project-name=potato-smp
