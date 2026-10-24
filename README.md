@@ -1,44 +1,81 @@
 <div align="center">
 
+<!-- Repo header banner (shadcn-styled, rendered by shieldcn.dev) -->
+<picture>
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://shieldcn.dev/header/graph.svg?title=PotatoSMP&subtitle=Minecraft%20server%20website%20%2B%20Cloudflare%20Pages%20API&mode=light&size=lg" />
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://shieldcn.dev/header/graph.svg?title=PotatoSMP&subtitle=Minecraft%20server%20website%20%2B%20Cloudflare%20Pages%20API&mode=dark&size=lg" />
+  <img src="https://shieldcn.dev/header/graph.svg?title=PotatoSMP&subtitle=Minecraft%20server%20website%20%2B%20Cloudflare%20Pages%20API&mode=dark&size=lg"
+       alt="PotatoSMP — Minecraft server website + Cloudflare Pages API" width="100%" />
+</picture>
+
 # 🥔 PotatoSMP — Website + API
-
-</div>
-
-<div align="center">
 
 A Minecraft-style website for the **PotatoSMP** server, paired with a Cloudflare Pages Functions REST backend that the site — and a future stats plugin — talk to.
 
-<br>
+<!-- ===== REPO STATS — live GitHub data, shadcn-styled (shieldcn.dev) ===== -->
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="
+    https://shieldcn.dev/github/stars/OmHackz/potato-smp-web.svg?variant=secondary&mode=light
+    https://shieldcn.dev/github/forks/OmHackz/potato-smp-web.svg?variant=secondary&mode=light
+    https://shieldcn.dev/github/watchers/OmHackz/potato-smp-web.svg?variant=secondary&mode=light
+    https://shieldcn.dev/github/license/OmHackz/potato-smp-web.svg?variant=secondary&mode=light
+    https://shieldcn.dev/github/issues/OmHackz/potato-smp-web.svg?variant=secondary&mode=light
+    https://shieldcn.dev/github/prs/OmHackz/potato-smp-web.svg?variant=secondary&mode=light" />
+  <source media="(prefers-color-scheme: dark)" srcset="
+    https://shieldcn.dev/github/stars/OmHackz/potato-smp-web.svg?variant=secondary&mode=dark
+    https://shieldcn.dev/github/forks/OmHackz/potato-smp-web.svg?variant=secondary&mode=dark
+    https://shieldcn.dev/github/watchers/OmHackz/potato-smp-web.svg?variant=secondary&mode=dark
+    https://shieldcn.dev/github/license/OmHackz/potato-smp-web.svg?variant=secondary&mode=dark
+    https://shieldcn.dev/github/issues/OmHackz/potato-smp-web.svg?variant=secondary&mode=dark
+    https://shieldcn.dev/github/prs/OmHackz/potato-smp-web.svg?variant=secondary&mode=dark" />
+  <img src="
+    https://shieldcn.dev/github/stars/OmHackz/potato-smp-web.svg?variant=secondary
+    https://shieldcn.dev/github/forks/OmHackz/potato-smp-web.svg?variant=secondary
+    https://shieldcn.dev/github/watchers/OmHackz/potato-smp-web.svg?variant=secondary
+    https://shieldcn.dev/github/license/OmHackz/potato-smp-web.svg?variant=secondary
+    https://shieldcn.dev/github/issues/OmHackz/potato-smp-web.svg?variant=secondary
+    https://shieldcn.dev/github/prs/OmHackz/potato-smp-web.svg?variant=secondary"
+       alt="GitHub stats: stars, forks, watchers, license, issues, PRs" />
+</picture>
 
-</div>
+<!-- ===== BUILD / DEPLOY / STACK — static + CI badges (shieldcn.dev) ===== -->
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="
+    https://shieldcn.dev/github/ci/OmHackz/potato-smp-web.svg?variant=outline&logo=lu:Workflow&mode=light
+    https://shieldcn.dev/github/last-commit/OmHackz/potato-smp-web.svg?variant=outline&logo=lu:GitCommit&mode=light
+    https://shieldcn.dev/badge/Deploy%20·%20Cloudflare%20Pages-live-00C5FF.svg?logo=ri:FaCloudflare&variant=branded&mode=light
+    https://shieldcn.dev/badge/React%2019-frontend-61DAFB.svg?logo=react&variant=branded&mode=light
+    https://shieldcn.dev/badge/Vite%208-bundler-646CFF.svg?logo=vite&variant=branded&mode=light
+    https://shieldcn.dev/badge/TypeScript-6-3178C6.svg?logo=typescript&variant=branded&mode=light
+    https://shieldcn.dev/badge/TanStack%20Query-5-F84D44.svg?variant=branded&mode=light
+    https://shieldcn.dev/badge/Node.js-22-3C873A.svg?logo=node.js&variant=branded&mode=light
+    https://shieldcn.dev/badge/Paper%2026.3%20·%20Java%2025-plugin-00A8FF.svg?logo=java&variant=branded&mode=light" />
+  <source media="(prefers-color-scheme: dark)" srcset="
+    https://shieldcn.dev/github/ci/OmHackz/potato-smp-web.svg?variant=outline&logo=lu:Workflow&mode=dark
+    https://shieldcn.dev/github/last-commit/OmHackz/potato-smp-web.svg?variant=outline&logo=lu:GitCommit&mode=dark
+    https://shieldcn.dev/badge/Deploy%20·%20Cloudflare%20Pages-live-00C5FF.svg?logo=ri:FaCloudflare&variant=branded&mode=dark
+    https://shieldcn.dev/badge/React%2019-frontend-61DAFB.svg?logo=react&variant=branded&mode=dark
+    https://shieldcn.dev/badge/Vite%208-bundler-646CFF.svg?logo=vite&variant=branded&mode=dark
+    https://shieldcn.dev/badge/TypeScript-6-3178C6.svg?logo=typescript&variant=branded&mode=dark
+    https://shieldcn.dev/badge/TanStack%20Query-5-F84D44.svg?variant=branded&mode=dark
+    https://shieldcn.dev/badge/Node.js-22-3C873A.svg?logo=node.js&variant=branded&mode=dark
+    https://shieldcn.dev/badge/Paper%2026.3%20·%20Java%2025-plugin-00A8FF.svg?logo=java&variant=branded&mode=dark" />
+  <img src="
+    https://shieldcn.dev/github/ci/OmHackz/potato-smp-web.svg?variant=outline&logo=lu:Workflow
+    https://shieldcn.dev/github/last-commit/OmHackz/potato-smp-web.svg?variant=outline&logo=lu:GitCommit
+    https://shieldcn.dev/badge/Deploy%20·%20Cloudflare%20Pages-live-00C5FF.svg?logo=ri:FaCloudflare&variant=branded
+    https://shieldcn.dev/badge/React%2019-frontend-61DAFB.svg?logo=react&variant=branded
+    https://shieldcn.dev/badge/Vite%208-bundler-646CFF.svg?logo=vite&variant=branded
+    https://shieldcn.dev/badge/TypeScript-6-3178C6.svg?logo=typescript&variant=branded
+    https://shieldcn.dev/badge/TanStack%20Query-5-F84D44.svg?variant=branded
+    https://shieldcn.dev/badge/Node.js-22-3C873A.svg?logo=node.js&variant=branded
+    https://shieldcn.dev/badge/Paper%2026.3%20·%20Java%2025-plugin-00A8FF.svg?logo=java&variant=branded"
+       alt="CI status, last commit, deploy target, and tech stack" />
+</picture>
 
-<div align="center">
-
-<img src="public/og-image.svg" alt="PotatoSMP" width="100%" />
-
-</div>
-
-<div align="center">
-
-<!-- shields.io -->
-[![GitHub repo](https://img.shields.io/badge/Repo-OmHackz/potato-smp-web-blueviolet?logo=github&logoColor=white&style=flat-square)](https://github.com/OmHackz/potato-smp-web)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](./LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/OmHackz/potato-smp-web?style=flat-square)](https://github.com/OmHackz/potato-smp-web/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/OmHackz/potato-smp-web?style=flat-square)](https://github.com/OmHackz/potato-smp-web/forks)
-[![GitHub issues](https://img.shields.io/github/issues/OmHackz/potato-smp-web?style=flat-square)](https://github.com/OmHackz/potato-smp-web/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/OmHackz/potato-smp-web?style=flat-square)](https://github.com/OmHackz/potato-smp-web/pulls)
-
-[![Deploy: Cloudflare Pages](https://img.shields.io/badge/Deploy-CF%20Pages-00C5FF?logo=cloudflare&logoColor=00C5FF&style=flat-square)](https://potato-smp.pages.dev)
-[![GitHub Actions: Deploy](https://img.shields.io/github/actions/workflow/status/OmHackz/potato-smp-web/deploy.yml?label=CI%20·%20Cloudflare&style=flat-square)](https://github.com/OmHackz/potato-smp-web/actions/workflows/deploy.yml)
-
-[![Frontend: React 19](https://img.shields.io/badge/React-19-61DAFB?logo=react&style=flat-square)](https://react.dev)
-[![Vite 8](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=646CFF&style=flat-square)](https://vite.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?logo=typescript&style=flat-square)](https://typescriptlang.org)
-[![TanStack Query](https://img.shields.io/badge/TanStack%20Query-5-FF4154?style=flat-square)](https://tanstack.com/query)
-[![Node 22](https://img.shields.io/badge/Node.js-22-3C873A?logo=nodedotjs&style=flat-square)](https://nodejs.org)
-[![Paper 26.3 · Java 25](https://img.shields.io/badge/PaperMC-26.3%20·%20Java%2025-00A8FF?logo=java&style=flat-square)](https://papermc.io)
-
-</div>
+[Live site → potato-smp.pages.dev](https://potato-smp.pages.dev)
 
 ---
 
@@ -58,7 +95,7 @@ A Minecraft-style website for the **PotatoSMP** server, paired with a Cloudflare
 npm install
 
 # 2. local secrets (the site + local API read these)
-cp .dev.vars.example .dev.vars   # or copy .env.example
+cp .env.example .dev.vars
 
 # 3. run frontend + local API together
 npm run dev:all
@@ -75,6 +112,30 @@ npm run build
 | `npm run build` | `tsc -b` + `vite build` → `dist/` |
 | `npm run deploy` | `wrangler pages deploy dist` |
 | `npm run typecheck` | `tsc --noEmit` |
+
+## 📈 Repo activity
+
+### Star history
+
+<picture>
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://shieldcn.dev/chart/github/stars/OmHackz/potato-smp-web.svg?mode=light&width=600&height=180" />
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://shieldcn.dev/chart/github/stars/OmHackz/potato-smp-web.svg?mode=dark&width=600&height=180" />
+  <img src="https://shieldcn.dev/chart/github/stars/OmHackz/potato-smp-web.svg?width=600&height=180"
+       alt="Star history over time" />
+</picture>
+
+### Issues over time
+
+<picture>
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://shieldcn.dev/chart/github/issues/OmHackz/potato-smp-web.svg?mode=light&width=600&height=180" />
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://shieldcn.dev/chart/github/issues/OmHackz/potato-smp-web.svg?mode=dark&width=600&height=180" />
+  <img src="https://shieldcn.dev/chart/github/issues/OmHackz/potato-smp-web.svg?width=600&height=180"
+       alt="Open issues over time" />
+</picture>
 
 ## 📁 Project layout
 
@@ -127,10 +188,23 @@ The site ships with a **REST contract** so a Paper plugin can push stats. The bu
 
 ## 📄 License
 
+<picture>
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://shieldcn.dev/github/license/OmHackz/potato-smp-web.svg?variant=default&mode=light&size=default" />
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://shieldcn.dev/github/license/OmHackz/potato-smp-web.svg?variant=default&mode=dark&size=default" />
+  <img src="https://shieldcn.dev/github/license/OmHackz/potato-smp-web.svg?variant=default&size=default"
+       alt="License: MIT" />
+</picture>
+
 [MIT](./LICENSE) — see the [license file](./LICENSE).
+
+---
 
 <div align="center">
 
 _🥔 Built for the PotatoSMP community._
+
+_Badges, charts, and header rendered by [shieldcn.dev](https://shieldcn.dev) — shadcn/ui-styled README badges._
 
 </div>
