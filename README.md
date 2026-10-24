@@ -1,515 +1,285 @@
 <div align="center">
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<!-- HERO -->
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
 <picture>
-<source media="(prefers-color-scheme: light)" srcset="https://shieldcn.dev/header/graph.svg?title=PotatoSMP&subtitle=YOUR%20NEXT%20ADVENTURE%20STARTS%20HERE&mode=light&size=lg&align=center" />
-<source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/header/graph.svg?title=PotatoSMP&subtitle=YOUR%20NEXT%20ADVENTURE%20STARTS%20HERE&mode=dark&size=lg&align=center" />
-<img src="https://shieldcn.dev/header/graph.svg?title=PotatoSMP&subtitle=YOUR%20NEXT%20ADVENTURE%20STARTS%20HERE&mode=dark&size=lg&align=center" alt="PotatoSMP — Your next adventure starts here" width="100%" />
+  <source media="(prefers-color-scheme: light)" srcset="https://shieldcn.dev/header/graph.svg?title=PotatoSMP&subtitle=MINECRAFT%20COMMUNITY%20%7C%20WEB%20PLATFORM%20%7C%20REST%20API&mode=light&size=lg&align=center" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/header/graph.svg?title=PotatoSMP&subtitle=MINECRAFT%20COMMUNITY%20%7C%20WEB%20PLATFORM%20%7C%20REST%20API&mode=dark&size=lg&align=center" />
+  <img src="https://shieldcn.dev/header/graph.svg?title=PotatoSMP&subtitle=MINECRAFT%20COMMUNITY%20%7C%20WEB%20PLATFORM%20%7C%20REST%20API&mode=dark&size=lg&align=center" alt="PotatoSMP" width="100%" />
 </picture>
 
 <br />
 
-🥔 PotatoSMP
-The ultimate hub for your Minecraft survival community.
+# 🥔 PotatoSMP
 
-A Minecraft-inspired web experience powered by React, TypeScript, and Cloudflare Pages — with a REST API designed to connect your website, server statistics, and future Paper plugin.
+### Your Minecraft world. Connected.
 
-🌐 Visit Website · 📦 Source Code · 🐛 Report a Bug · ✨ Request a Feature
+A Minecraft-inspired community platform built with **React, TypeScript, and Cloudflare Pages**. Featuring a custom website, server information, player statistics, leaderboards, and a REST API designed for future server integrations.
+
+<br />
+
+[**🌐 Live Website**](https://potato-smp.pages.dev) · [**📦 GitHub Repository**](https://github.com/OmHackz/potato-smp-web) · [**🐛 Issues**](https://github.com/OmHackz/potato-smp-web/issues)
 
 <br />
 
 <picture>
-<source media="(prefers-color-scheme: light)" srcset="https://shieldcn.dev/group/github/stars/OmHackz/potato-smp-web+github/forks/OmHackz/potato-smp-web+github/watchers/OmHackz/potato-smp-web+github/license/OmHackz/potato-smp-web.svg?variant=secondary&mode=light" />
-<source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/group/github/stars/OmHackz/potato-smp-web+github/forks/OmHackz/potato-smp-web+github/watchers/OmHackz/potato-smp-web+github/license/OmHackz/potato-smp-web.svg?variant=secondary&mode=dark" />
-<img src="https://shieldcn.dev/group/github/stars/OmHackz/potato-smp-web+github/forks/OmHackz/potato-smp-web+github/watchers/OmHackz/potato-smp-web+github/license/OmHackz/potato-smp-web.svg?variant=secondary" alt="GitHub stars, forks, watchers, and license" />
+  <source media="(prefers-color-scheme: light)" srcset="https://shieldcn.dev/group/github/stars/OmHackz/potato-smp-web+github/forks/OmHackz/potato-smp-web+github/license/OmHackz/potato-smp-web.svg?variant=secondary&mode=light" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/group/github/stars/OmHackz/potato-smp-web+github/forks/OmHackz/potato-smp-web+github/license/OmHackz/potato-smp-web.svg?variant=secondary&mode=dark" />
+  <img src="https://shieldcn.dev/group/github/stars/OmHackz/potato-smp-web+github/forks/OmHackz/potato-smp-web+github/license/OmHackz/potato-smp-web.svg?variant=secondary" alt="GitHub repository statistics" />
 </picture>
 
 <br />
 
-<picture>
-<source media="(prefers-color-scheme: light)" srcset="https://shieldcn.dev/group/github/ci/OmHackz/potato-smp-web+badge/Deploy·Cloudflare%20Pages-live-00C5FF+badge/Live%20Site-potato--smp.pages.dev-00C5FF.svg?variant=branded&mode=light" />
-<source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/group/github/ci/OmHackz/potato-smp-web+badge/Deploy·Cloudflare%20Pages-live-00C5FF+badge/Live%20Site-potato--smp.pages.dev-00C5FF.svg?variant=branded&mode=dark" />
-<img src="https://shieldcn.dev/group/github/ci/OmHackz/potato-smp-web+badge/Deploy·Cloudflare%20Pages-live-00C5FF+badge/Live%20Site-potato--smp.pages.dev-00C5FF.svg?variant=branded" alt="Build status and Cloudflare Pages deployment" />
-</picture>
+<img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+<img src="https://img.shields.io/badge/Cloudflare_Pages-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare Pages" />
+<img src="https://img.shields.io/badge/REST_API-00A98F?style=flat-square" alt="REST API" />
 
 <br /><br />
 
-<img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React 19" />
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-<img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare" />
-
-<br /><br />
-
-Built for players. Designed for performance. Ready to expand.
+**Explore. Survive. Build. Repeat.**
 
 </div>
 
-📚 Table of Contents
-✨ Features
-🏗️ Architecture
-🚀 Getting Started
-📁 Project Structure
-🔌 REST API
-☁️ Deployment
-🧩 PotatoStats Plugin
-⚙️ Configuration
-🛠️ Development Commands
-📊 Repository Activity
-🤝 Contributing
-📄 License
-✨ Features
+---
 
-A complete Minecraft community website with a frontend and a server-side API, designed to grow alongside the PotatoSMP server.
+## ✨ Overview
 
-<table>
-<tr>
-<td width="50%">
-<h3>🎮 Minecraft-Inspired UI</h3>
-<p>Blocky buttons, pixel-style typography, themed panels, reusable design tokens, status indicators, tooltips, and toast notifications.</p>
-</td>
-<td width="50%">
-<h3>🌍 Community Pages</h3>
-<p>Home, Join, Players, Player Profiles, Map, Stats, Shop, and a custom 404 page.</p>
-</td>
-</tr>
-<tr>
-<td width="50%">
-<h3>🟢 Live Server Status</h3>
-<p>API-powered online/offline status, periodic polling, and a convenient copyable server address.</p>
-</td>
-<td width="50%">
-<h3>📈 Player Statistics</h3>
-<p>Player information, statistics, leaderboards, and a provider system that supports demo, Plan, and custom data sources.</p>
-</td>
-</tr>
-<tr>
-<td width="50%">
-<h3>⚡ Serverless REST API</h3>
-<p>Cloudflare Pages Functions handle server data, player lookups, leaderboards, ranks, voting, and stat collection.</p>
-</td>
-<td width="50%">
-<h3>🔗 Plugin-Ready Backend</h3>
-<p>A defined integration contract for a future Paper plugin to send batched server statistics to the API.</p>
-</td>
-</tr>
-</table>
+PotatoSMP brings your Minecraft server community together through a dedicated website and a serverless API.
 
-🧱 Built with
-Technology	Purpose
-React 19	Component-based user interface
-TypeScript	Type-safe application development
-Vite	Development server and production builds
-TanStack Query	Server-state and data-fetching infrastructure
-Node.js 22	JavaScript tooling and development environment
-Cloudflare Pages	Website hosting and serverless API
-Wrangler	Local Cloudflare development and deployment
-Paper / Java	Target platform for the planned stats plugin
-Note: The frontend and API are separate layers. The website consumes the API, and a future stats plugin will send data to it. The API does not depend on the frontend.
-🏗️ Architecture
-mermaid
+The project combines a Minecraft-inspired design system with player information, server status, statistics, and a flexible data-provider architecture.
+
+- 🎮 **Minecraft-inspired interface** — Block-style buttons, themed panels, pixel fonts, status indicators, and reusable UI components.
+- 🌐 **Community website** — Dedicated pages for the homepage, joining the server, players, player profiles, maps, statistics, and ranks.
+- 🟢 **Server status** — API-powered status indicators and a copyable server address.
+- 👥 **Player directory** — Player listings and individual player profiles.
+- 📊 **Statistics and leaderboards** — A foundation for displaying player and server statistics.
+- 🛍️ **Rank shop** — A dedicated page for server ranks.
+- ⚡ **Serverless REST API** — Cloudflare Pages Functions for server data, players, statistics, ranks, voting, and data collection.
+- 🔌 **Extensible architecture** — Support for demo, Plan, and custom statistics providers.
+- ☁️ **Automated deployment** — GitHub Actions integration for Cloudflare Pages.
+
+## 🧱 Technology Stack
+
+| Technology | Role |
+|---|---|
+| React 19 | User interface |
+| TypeScript | Type safety |
+| Vite | Development and production builds |
+| TanStack Query | Server-state management |
+| Node.js 22 | JavaScript tooling |
+| Cloudflare Pages | Hosting and serverless functions |
+| Wrangler | Local development and deployment |
+| Paper / Java | Target platform for the planned statistics plugin |
+
+## 🏗️ Architecture
+
+```mermaid
 flowchart TD
-    Player["🎮 Minecraft Player"]
-    Website["🌐 PotatoSMP Website<br/>React + TypeScript"]
-    API["⚡ Cloudflare Pages Functions<br/>REST API"]
-    Store[("🗄️ Persistent Data Layer")]
-    Plugin["🧩 PotatoStats<br/>Paper Plugin"]
-    Plan["📊 Plan Integration"]
-    Demo["🧪 Demo Data Provider"]
+    Player["🎮 Players"]
+    Web["🌐 PotatoSMP Website<br/>React + TypeScript"]
+    API["⚡ REST API<br/>Cloudflare Pages Functions"]
+    Data[("📊 Statistics Data")]
+    Plugin["🧩 PotatoStats Plugin"]
+    Providers["🔌 Data Providers<br/>Demo / Plan / Custom"]
 
-    Player --> Website
-    Website --> API
-    API <--> Store
-    Plugin -->|"Authenticated batch uploads"| API
-    Plan --> Website
-    Demo --> Website
+    Player --> Web
+    Web --> API
+    API <--> Data
+    Plugin -->|"Authenticated batches"| API
+    Providers --> Web
+````
 
+The website consumes data through the API and configured statistics providers. A planned Paper plugin will send authenticated batches of server statistics to the collection endpoint.
 
-Data flow at a glance
+The diagram represents the intended integration architecture; actual data storage and plugin connectivity depend on their respective implementations.
 
-Players visit the website and browse server information.
-The frontend requests data from the REST API or its configured statistics provider.
-The API processes requests and accesses its configured storage or bindings.
-The planned Paper plugin sends authenticated, batched statistics to the collection endpoint.
+## 📁 Project Structure
 
-The diagram shows the intended architecture. Actual storage configuration and plugin connectivity depend on the deployed implementation.
-
-🚀 Getting Started
-
-Get the project running locally in a few minutes.
-
-Prerequisites
-
-Install the following before you begin:
-
-Node.js — use a compatible version for the project.
-npm — included with Node.js.
-Git — to clone the repository.
-A Cloudflare account is only needed for deployment, not ordinary local frontend development.
-1. Clone the repository
-bash
-git clone https://github.com/OmHackz/potato-smp-web.git
-cd potato-smp-web
-
-2. Install dependencies
-bash
-npm install
-
-3. Configure local environment variables
-
-Create your local Wrangler secrets file from the example:
-
-bash
-cp .env.example .dev.vars
-
-
-Edit .dev.vars and configure the values required by your local API.
-
-For example:
-
-dotenv
-API_SECRET=replace-with-a-long-random-secret
-SERVER_ADDRESS=play.example.com
-SERVER_EDITION=java
-
-
-Replace the example server address with your actual Minecraft server address.
-
-Security: Never commit .dev.vars, production secrets, or real API tokens. Keep frontend variables separate from server-only secrets.
-
-4. Start the development environment
-
-To run the frontend and local API together:
-
-bash
-npm run dev:all
-
-
-Alternatively, start them separately:
-
-bash
-# Terminal 1 — frontend
-npm run dev
-
-# Terminal 2 — Cloudflare Pages Functions
-npm run dev:api
-
-5. Build for production
-bash
-npm run build
-
-
-The production frontend build is generated in dist/.
-
-📁 Project Structure
 text
+
+```
 potato-smp-web/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml          # CI and Cloudflare deployment
+│       └── deploy.yml
 │
 ├── public/
-│   └── fonts/                  # Self-hosted Minecraft fonts
+│   └── fonts/                       # Minecraft fonts
 │
 ├── src/
 │   ├── components/
-│   │   ├── layout/              # Navbar, Footer, Layout
-│   │   └── ui/                  # Reusable UI components
-│   │
-│   ├── data/                    # Demo, Plan, and custom providers
-│   ├── hooks/                   # Server status and stats hooks
-│   ├── lib/                     # API client and utilities
-│   ├── pages/                   # Website pages
+│   │   ├── layout/                  # Navbar, Footer, Layout
+│   │   └── ui/                      # Buttons, panels, tabs, tooltips
+│   ├── pages/                       # Website pages
+│   ├── data/                        # Statistics providers
+│   ├── hooks/                       # Server status and stats hooks
+│   ├── lib/                          # API client and utilities
 │   ├── styles/
-│   │   └── tokens.css           # Design-system tokens
-│   ├── types/                   # Shared TypeScript definitions
-│   └── App.tsx                  # Application routing
+│   │   └── tokens.css               # Design-system tokens
+│   ├── types/                        # Shared TypeScript types
+│   └── App.tsx                       # Application routes
 │
 ├── functions/
-│   ├── _middleware.ts           # Shared request middleware
-│   ├── _utils.ts                # JSON, CORS, and bindings helpers
-│   └── api/
-│       ├── server.ts            # Server information
-│       ├── players.ts           # Player listing
-│       ├── players/
-│       │   └── [uuid].ts        # Individual player lookup
-│       ├── stats.ts             # Statistics
-│       ├── stats/
-│       │   └── leaderboard/
-│       │       └── [type].ts    # Typed leaderboard
-│       ├── ranks.ts             # Rank information
-│       ├── vote.ts              # Voting endpoint
-│       └── collect.ts           # Statistics ingestion
+│   ├── api/
+│   │   ├── players/
+│   │   │   └── [uuid].ts            # Player profile
+│   │   ├── stats/
+│   │   │   └── leaderboard/
+│   │   │       └── [type].ts        # Leaderboards
+│   │   ├── server.ts                # Server information
+│   │   ├── players.ts               # Player listing
+│   │   ├── stats.ts                 # Server statistics
+│   │   ├── ranks.ts                 # Rank information
+│   │   ├── vote.ts                  # Voting
+│   │   └── collect.ts               # Statistics collection
+│   ├── _middleware.ts               # Request middleware
+│   └── _utils.ts                    # Shared API utilities
 │
-├── .env.example
-├── .dev.vars                    # Local secrets; do not commit
-├── wrangler.jsonc               # Cloudflare configuration
-├── package.json
-├── package-lock.json
-├── PotatoStats-PLUGIN-PROMPT.md
+├── .env.example                     # Environment template
+├── .dev.vars                        # Local secrets
+├── wrangler.jsonc                   # Cloudflare configuration
+├── package.json                     # Dependencies and scripts
+├── package-lock.json                # Locked dependencies
+├── PotatoStats-PLUGIN-PROMPT.md     # Plugin specification
 └── README.md
+```
 
-This is a representative layout based on the documented routes and files. Keep the tree synchronized with the actual repository if filenames or directories differ.
-🔌 REST API
+## 🔌 REST API
 
-The API lives under /api and is implemented with Cloudflare Pages Functions.
+All documented endpoints are organized under `/api`.
 
-Endpoint reference
-Method	Endpoint	Purpose
-GET	/api/server	Retrieve server information and status
-GET	/api/players	Retrieve the player listing
-GET	/api/players/:uuid	Retrieve an individual player's information
-GET	/api/stats	Retrieve server statistics
-GET	/api/stats/leaderboard/:type	Retrieve a leaderboard by statistic type
-GET	/api/ranks	Retrieve available ranks
-POST	/api/vote	Submit a vote-related request
-POST	/api/collect	Submit a statistics collection batch
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `GET` | `/api/server` | Server information and status |
+| `GET` | `/api/players` | Player listing |
+| `GET` | `/api/players/:uuid` | Individual player information |
+| `GET` | `/api/stats` | Server statistics |
+| `GET` | `/api/stats/leaderboard/:type` | Statistics leaderboard |
+| `GET` | `/api/ranks` | Available ranks |
+| `POST` | `/api/vote` | Vote-related requests |
+| `POST` | `/api/collect` | Statistics ingestion |
 
-The precise response schemas, validation rules, and supported leaderboard types are defined by the endpoint implementations.
-
-Example requests
-
-Retrieve server information:
+### Example Requests
 
 bash
+
+```
 curl https://potato-smp.pages.dev/api/server
-
-
-Retrieve players:
-
-bash
 curl https://potato-smp.pages.dev/api/players
-
-
-Retrieve server statistics:
-
-bash
 curl https://potato-smp.pages.dev/api/stats
-
-
-Retrieve ranks:
-
-bash
 curl https://potato-smp.pages.dev/api/ranks
+```
 
+### Authentication
 
-These examples illustrate the documented route structure. They assume the corresponding endpoints are deployed and publicly accessible.
-
-Authenticated collection
-
-The collection endpoint is designed for trusted server-side integrations.
+The statistics collection endpoint is designed for authenticated server-side integrations.
 
 http
+
+```
 POST /api/collect
 Authorization: Bearer YOUR_API_SECRET
 Content-Type: application/json
+```
 
+The exact request schema and accepted event formats are defined by the API implementation.
 
-Example request shape:
+Security: Keep `API_SECRET` server-side. Never expose private credentials through frontend environment variables or browser code.
 
-json
-{
-  "events": []
-}
+## 📈 Statistics Providers
 
+The frontend supports three documented provider modes.
 
-The empty events array is illustrative, not a complete event schema. Use the actual payload contract implemented by the API and documented in PotatoStats-PLUGIN-PROMPT.md.
+| Provider | Purpose |
+| --- | --- |
+| `demo` | Demonstration and development data |
+| `plan` | Plan-based statistics integration |
+| `custom` | Configurable external statistics API |
 
-Important: Protect authenticated endpoints with server-side secret validation. Do not expose API_SECRET through a VITE_ environment variable or include it in browser requests.
-
-☁️ Deployment
-
-PotatoSMP is designed to deploy to Cloudflare Pages.
-
-Deployment configuration
-Setting	Value
-Hosting platform	Cloudflare Pages
-Build command	npm run build
-Build output directory	dist
-Cloudflare configuration	wrangler.jsonc
-CI workflow	.github/workflows/deploy.yml
-Production website	potato-smp.pages.dev
-1. Create a Cloudflare API token
-
-Open the Cloudflare dashboard and create an API token with the permissions required to deploy to Pages.
-
-Use the minimum permissions necessary for your account and deployment workflow.
-
-2. Add GitHub Actions secrets
-
-Navigate to:
-
-GitHub repository → Settings → Secrets and variables → Actions
-
-Add the following repository secrets:
-
-Secret	Description
-CLOUDFLARE_API_TOKEN	Token authorized to deploy the Pages project
-CLOUDFLARE_ACCOUNT_ID	Cloudflare account identifier
-3. Configure production environment variables
-
-In the Cloudflare Pages project settings, configure the server-side environment variables required by the application.
-
-At minimum, review:
-
-API_SECRET
-SERVER_ADDRESS
-SERVER_EDITION
-
-Set any additional bindings or storage configuration required by the implementation.
-
-4. Deploy
-
-If your package scripts are configured as documented:
-
-bash
-npm run build
-npm run deploy
-
-
-Or push to the configured deployment branch and allow GitHub Actions to run.
-
-Before your first production deployment: Verify that the workflow's branch filters, Cloudflare project name, Wrangler configuration, secrets, and required bindings match your actual setup.
-
-🧩 PotatoStats Plugin
-Connecting Paper to the website
-
-The planned PotatoStats plugin is intended to connect a Minecraft Paper server to the PotatoSMP REST API.
-
-Its integration contract is documented in:
-
-PotatoStats-PLUGIN-PROMPT.md
-
-Intended integration flow
-The plugin collects supported server and player statistics.
-Events are batched to reduce unnecessary HTTP requests.
-The plugin sends batches to POST /api/collect.
-The API authenticates and validates incoming requests.
-Accepted data becomes available to the configured statistics system.
-Target environment
-Component	Target
-Server platform	Paper
-Paper API target	26.3
-Java target	Java 25
-Collection endpoint	POST /api/collect
-Authentication	Bearer token using API_SECRET
-
-These are the target versions specified by the project documentation, not a guarantee of compatibility with every server distribution.
-
-Plugin status: The website and collection contract are documented here; the plugin's implementation and successful end-to-end integration should be verified separately.
-
-⚙️ Configuration
-Environment variables
-Variable	Location	Description
-API_SECRET	.dev.vars and Cloudflare server environment	Secret used to authenticate protected API requests
-VITE_STATS_MODE	Frontend build environment	Selects the statistics provider
-VITE_STATS_API_URL	Frontend build environment	API URL used by the custom provider
-SERVER_ADDRESS	Cloudflare environment	Minecraft server address displayed by the site
-SERVER_EDITION	Cloudflare environment	Server edition, such as java or bedrock
-Statistics providers
-
-The frontend supports three documented provider modes:
-
-Mode	Purpose
-demo	Uses demo data for development and previews
-plan	Integrates with a Plan-based statistics source
-custom	Uses a configurable statistics API
-
-Configure the selected mode in the frontend environment:
+Configuration:
 
 dotenv
+
+```
 VITE_STATS_MODE=demo
 VITE_STATS_API_URL=https://api.example.com
+```
 
+`VITE_STATS_API_URL` is intended for the custom provider. Values prefixed with `VITE_` are exposed to client-side code and must never contain secrets.
 
-VITE_STATS_API_URL is relevant when using the custom provider.
+## 🧩 PotatoStats Plugin
 
-Security note: Vite exposes VITE_ variables to client-side code. Only use them for public configuration. Never put private credentials, bearer tokens, or database secrets in these variables.
-🛠️ Development Commands
-Command	Description
-npm run dev	Start the Vite development server
-npm run dev:api	Start the local Cloudflare Pages API on port 8788
-npm run dev:all	Run the frontend and local API together
-npm run build	Run TypeScript project builds and create the production bundle
-npm run deploy	Deploy the dist/ directory using Wrangler
-npm run typecheck	Run the TypeScript type check
-npm run lint	Run Oxlint
-Recommended pre-deployment checks
+The planned PotatoStats plugin is intended to connect a Paper server to the REST API and submit batched statistics.
 
-Run the checks before opening a pull request or deploying:
+| Component | Target |
+| --- | --- |
+| Platform | Paper |
+| API target | `26.3` |
+| Java target | Java 25 |
+| Collection endpoint | `POST /api/collect` |
+| Authentication | Bearer token |
 
-bash
-npm run typecheck
-npm run lint
-npm run build
+The plugin specification is available in `PotatoStats-PLUGIN-PROMPT.md`.
 
+The listed versions describe the project's intended targets; verify compatibility and implementation status independently.
 
-This helps catch type errors, lint issues, and production build failures before deployment.
+## ☁️ Infrastructure & Deployment
 
-📊 Repository Activity
+| Setting | Value |
+| --- | --- |
+| Hosting | Cloudflare Pages |
+| Build command | `npm run build` |
+| Output directory | `dist` |
+| Cloudflare configuration | `wrangler.jsonc` |
+| Deployment workflow | `.github/workflows/deploy.yml` |
+| Production site | [potato-smp.pages.dev](<https://potato-smp.pages.dev?utm_source=chatgpt.com>) |
 
-<div align="center">
+### GitHub Actions Secrets
 
-⭐ Star History
+Configure the following under Repository → Settings → Secrets and variables → Actions.
 
-<picture>
-<source media="(prefers-color-scheme: light)" srcset="https://shieldcn.dev/chart/github/stars/OmHackz/potato-smp-web.svg?mode=light&width=720&height=200" />
-<source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/chart/github/stars/OmHackz/potato-smp-web.svg?mode=dark&width=720&height=200" />
-<img src="https://shieldcn.dev/chart/github/stars/OmHackz/potato-smp-web.svg?width=720&height=200" alt="PotatoSMP GitHub star history" width="100%" />
-</picture>
+| Secret | Purpose |
+| --- | --- |
+| `CLOUDFLARE_API_TOKEN` | Authorized deployment token |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare account identifier |
 
-🐛 Issue History
+Production environment variables and any required storage bindings must also be configured in Cloudflare Pages.
 
-<picture>
-<source media="(prefers-color-scheme: light)" srcset="https://shieldcn.dev/chart/github/issues/OmHackz/potato-smp-web.svg?mode=light&width=720&height=200" />
-<source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/chart/github/issues/OmHackz/potato-smp-web.svg?mode=dark&width=720&height=200" />
-<img src="https://shieldcn.dev/chart/github/issues/OmHackz/potato-smp-web.svg?width=720&height=200" alt="PotatoSMP GitHub issue history" width="100%" />
-</picture>
+## ⚙️ Environment Variables
 
-</div>
+| Variable | Scope | Purpose |
+| --- | --- | --- |
+| `API_SECRET` | Server-side | Authenticates protected API requests |
+| `VITE_STATS_MODE` | Frontend | Selects the statistics provider |
+| `VITE_STATS_API_URL` | Frontend | Configures the custom statistics API |
+| `SERVER_ADDRESS` | Server-side | Minecraft server address |
+| `SERVER_EDITION` | Server-side | Server edition, such as `java` or `bedrock` |
 
-🤝 Contributing
+Local development secrets belong in `.dev.vars`. Use `.env.example` as the environment template and configure production values in Cloudflare Pages.
+
+## 🛠️ Development Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server |
+| `npm run dev:api` | Start the local Pages API |
+| `npm run dev:all` | Run frontend and API together |
+| `npm run build` | Type-check and build the application |
+| `npm run deploy` | Deploy the production build |
+| `npm run typecheck` | Run TypeScript checks |
+| `npm run lint` | Run Oxlint |
+
+## 📊 Repository Activity
+
+## 🤝 Contributing
 
 Contributions, bug reports, and feature suggestions are welcome.
 
-Fork the repository.
-Create a feature branch.
-Make your changes and run the relevant checks.
-Open a pull request with a clear description of your changes.
+- Report bugs through [GitHub Issues](<https://github.com/OmHackz/potato-smp-web/issues?utm_source=chatgpt.com>).
+- Submit focused pull requests with clear descriptions.
+- Keep documentation aligned with actual implementation.
+- Never commit secrets, local environment files, or generated build artifacts.
 
-For bugs or suggestions, use the GitHub Issues page.
+## 📄 License
 
-Please avoid committing generated build output, local secrets, or unrelated changes.
-
-📄 License
-
-<div align="center">
-
-<a href="./LICENSE">
-<img src="https://img.shields.io/github/license/OmHackz/potato-smp-web?style=for-the-badge&label=License" alt="Project license" />
-</a>
-
-MIT License
-
-See the LICENSE file for the full terms.
-
-</div>
-
-<div align="center">
-
-🥔 Made for the PotatoSMP community.
-
-Explore. Survive. Build. Repeat.
-
-🌐 Website · ⭐ Star on GitHub · 💬 Issues & Ideas
-
-<br />
-
-Crafted with ❤️, TypeScript, React, and Cloudflare.
-
-</div>
+Released under the MIT License.
