@@ -1,0 +1,39 @@
+{
+  "name": "potatosmp",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "wrangler pages dev dist --port 8788",
+    "dev:all": "concurrently -k \"vite\" \"wait-on http://localhost:8788 && wrangler pages dev dist --port 8788\"",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "deploy": "wrangler pages deploy dist",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist node_modules/.vite"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.104.5",
+    "clsx": "^2.1.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "esbuild": "^0.28.2",
+    "oxlint": "^1.88.0",
+    "typescript": "~6.0.3",
+    "concurrently": "^10.0.0",
+    "wait-on": "^9.0.5",
+    "vite": "^8.3.4",
+    "vite-plugin-svgr": "^5.2.0",
+    "wrangler": "^4.0.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "potato-smp",
+  "pages_build_output_dir": "dist",
+  "compatibility_date": "2024-09-23",
+
+  "vars": {
+    "SERVER_ADDRESS": "play.potatosmp.net",
+    "SERVER_EDITION": "java",
+    "VITE_STATS_MODE": "demo",
+    "CORS_ORIGIN": "*"
+  }
+}

@@ -1,0 +1,197 @@
+.button {
+  --btn-bg: var(--color-primary);
+  --btn-bg-hover: var(--color-primary-hover);
+  --btn-bg-active: var(--color-primary-active);
+  --btn-text: var(--color-text-inverse);
+  --btn-border: transparent;
+  --btn-shadow: var(--shadow-button);
+  --btn-shadow-hover: var(--shadow-button-hover);
+  --btn-shadow-active: var(--shadow-button-active);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 2px solid var(--btn-border);
+  border-radius: var(--radius-md);
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  box-shadow: var(--btn-shadow);
+  transition:
+    background-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    transform var(--transition-fast),
+    filter var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 100%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.button:hover:not(.disabled):not(:disabled) {
+  background: var(--btn-bg-hover);
+  box-shadow: var(--btn-shadow-hover), var(--shadow-glow-primary);
+  transform: translateY(-2px);
+}
+
+.button:hover:not(.disabled):not(:disabled)::before {
+  opacity: 1;
+}
+
+.button:active:not(.disabled):not(:disabled) {
+  background: var(--btn-bg-active);
+  box-shadow: var(--btn-shadow-active);
+  transform: translateY(2px);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.button.disabled,
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: var(--btn-shadow);
+}
+
+.button.disabled::before,
+.button:disabled::before {
+  display: none;
+}
+
+/* Variants */
+.primary {
+  --btn-bg: var(--color-primary);
+  --btn-bg-hover: var(--color-primary-hover);
+  --btn-bg-active: var(--color-primary-active);
+}
+
+.secondary {
+  --btn-bg: var(--color-bg-panel);
+  --btn-bg-hover: var(--color-bg-panel-hover);
+  --btn-bg-active: var(--color-bg-input);
+  --btn-text: var(--color-text);
+  --btn-border: var(--color-border);
+  --btn-shadow: var(--shadow-sm);
+  --btn-shadow-hover: var(--shadow-md);
+  --btn-shadow-active: var(--shadow-sm);
+}
+
+.secondary:hover:not(.disabled):not(:disabled) {
+  box-shadow: var(--btn-shadow-hover);
+  border-color: var(--color-border-bright);
+}
+
+.gold {
+  --btn-bg: var(--color-gold);
+  --btn-bg-hover: var(--color-gold-hover);
+  --btn-bg-active: var(--color-gold-dim);
+  --btn-text: var(--color-text-inverse);
+  --btn-shadow: 0 4px 0 0 #8b6d1a;
+  --btn-shadow-hover: 0 6px 0 0 #8b6d1a;
+  --btn-shadow-active: 0 1px 0 0 #8b6d1a;
+}
+
+.gold:hover:not(.disabled):not(:disabled) {
+  box-shadow: var(--btn-shadow-hover), 0 0 16px rgba(232, 197, 71, 0.4);
+}
+
+.destructive {
+  --btn-bg: var(--color-red);
+  --btn-bg-hover: #ff6b6b;
+  --btn-bg-active: #cc3333;
+  --btn-shadow: 0 4px 0 0 #8b1a1a;
+  --btn-shadow-hover: 0 6px 0 0 #8b1a1a;
+  --btn-shadow-active: 0 1px 0 0 #8b1a1a;
+}
+
+.destructive:hover:not(.disabled):not(:disabled) {
+  box-shadow: var(--btn-shadow-hover), 0 0 16px rgba(255, 85, 85, 0.4);
+}
+
+.ghost {
+  --btn-bg: transparent;
+  --btn-bg-hover: var(--color-bg-panel);
+  --btn-bg-active: var(--color-bg-input);
+  --btn-text: var(--color-text);
+  --btn-border: transparent;
+  --btn-shadow: none;
+  --btn-shadow-hover: none;
+  --btn-shadow-active: none;
+}
+
+.ghost:hover:not(.disabled):not(:disabled) {
+  box-shadow: none;
+  transform: none;
+}
+
+/* Sizes */
+.sm {
+  padding: var(--space-1) var(--space-3);
+  font-size: 11px;
+  min-height: 32px;
+}
+
+.md {
+  padding: var(--space-2) var(--space-4);
+  font-size: 13px;
+  min-height: 44px;
+}
+
+.lg {
+  padding: var(--space-3) var(--space-6);
+  font-size: 14px;
+  min-height: 52px;
+}
+
+.xl {
+  padding: var(--space-4) var(--space-8);
+  font-size: 16px;
+  min-height: 64px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+/* Spinner */
+.spinner {
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.labelHidden {
+  visibility: hidden;
+}
+
+.iconLeft,
+.iconRight {
+  display: inline-flex;
+  flex-shrink: 0;
+  line-height: 1;
+}

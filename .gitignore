@@ -1,0 +1,52 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+.pnp
+.pnp.*
+
+# Build output
+dist
+dist-ssr
+build
+
+# Local env / secrets — never commit
+.env.local
+.env.*.local
+.dev.vars
+.wrangler
+.wrangler/**
+
+# Cloudflare Pages local dev-state
+.wrangler
+.wrangler/**
+
+# Understand-anything knowledge graph (generated)
+.ua
+.ua/**
+
+# Type-check / build caches
+*.tsbuildinfo
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~
+
+# OS
+Thumbs.db
+.DS_Store

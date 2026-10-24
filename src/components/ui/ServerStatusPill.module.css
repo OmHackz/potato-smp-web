@@ -1,0 +1,139 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: var(--radius-pill);
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.compact {
+  padding: var(--space-1) var(--space-2);
+  gap: var(--space-1);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.online .dot {
+  background: var(--color-online);
+  color: var(--color-online);
+}
+
+.offline .dot {
+  background: var(--color-offline);
+  color: var(--color-offline);
+}
+
+.unknown .dot {
+  background: var(--color-text-muted);
+  color: var(--color-text-muted);
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 8px currentColor; }
+  50% { opacity: 0.6; transform: scale(0.9); box-shadow: 0 0 16px currentColor; }
+}
+
+.statusText {
+  color: var(--color-text);
+}
+
+.online .statusText { color: var(--color-online); }
+.offline .statusText { color: var(--color-offline); }
+
+.players {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--color-text-dim);
+  background: var(--color-bg-input);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border-dim);
+}
+
+.playersCompact {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--color-text);
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-pill);
+}
+
+.separator {
+  color: var(--color-border);
+  margin: 0 var(--space-1);
+}
+
+.address {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.copyBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-left: var(--space-1);
+  color: var(--color-text-muted);
+  background: var(--color-bg-input);
+  border: 1px solid var(--color-border-dim);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.copyBtn:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  background: var(--color-bg-panel);
+}
+
+.copyIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.loading {
+  opacity: 0.7;
+}
+
+.loading .dot {
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.unknown .statusText {
+  color: var(--color-text-muted);
+}

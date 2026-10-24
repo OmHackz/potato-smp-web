@@ -1,0 +1,435 @@
+.page {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--space-8);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-dim);
+  margin-top: var(--space-1);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+  letter-spacing: -0.01em;
+}
+
+.sectionSubtitle {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-text-dim);
+  margin-bottom: var(--space-6);
+}
+
+/* Ranks */
+.ranksSection {
+  margin-bottom: var(--space-12);
+}
+
+.ranksGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .ranksGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .ranksGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.rankCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  transition: all var(--transition-base);
+}
+
+.rankCard:hover {
+  transform: translateY(-4px);
+}
+
+.rankCard.featured {
+  border-width: 2px;
+}
+
+.featuredBadge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-inverse);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-md);
+  z-index: 1;
+}
+
+.rankHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-4) var(--space-4) var(--space-2);
+  margin: calc(var(--space-5) * -1) calc(var(--space-5) * -1) var(--space-4);
+  border-bottom: 1px solid var(--color-border-dim);
+}
+
+.rankCard.featured .rankHeader {
+  margin: calc(var(--space-5) * -1) calc(var(--space-5) * -1) var(--space-4);
+}
+
+.rankIcon {
+  margin-bottom: var(--space-3);
+}
+
+.rankName {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: var(--space-1);
+}
+
+.rankPrice {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.currency {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-text-dim);
+}
+
+.perksList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  flex: 1;
+}
+
+.perksList li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--color-text-dim);
+  line-height: 1.5;
+}
+
+.perkCheck {
+  flex-shrink: 0;
+  color: var(--color-primary);
+  margin-top: 1px;
+}
+
+.morePerks {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-top: var(--space-2);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-border-dim);
+}
+
+.comingSoon {
+  text-align: center;
+  padding: var(--space-12) var(--space-6) !important;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.comingSoon :global(.package-icon) {
+  width: 64px;
+  height: 64px;
+  color: var(--color-text-muted);
+  margin: 0 auto var(--space-4);
+  opacity: 0.5;
+}
+
+.comingSoon h3 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.comingSoon p {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-text-dim);
+  margin-bottom: var(--space-6);
+}
+
+/* Comparison Table */
+.comparisonSection {
+  margin-bottom: var(--space-12);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-panel);
+}
+
+.comparisonTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+  font-size: 12px;
+}
+
+.comparisonTable thead {
+  background: var(--color-bg-input);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.comparisonTable th {
+  padding: var(--space-3) var(--space-2);
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-dim);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.comparePerk {
+  text-align: left !important;
+  font-weight: 700;
+  color: var(--color-text);
+  position: sticky;
+  left: 0;
+  background: var(--color-bg-panel);
+  z-index: 1;
+  border-right: 1px solid var(--color-border-dim);
+}
+
+.comparisonTable th.featured {
+  background: rgba(90, 166, 66, 0.1);
+}
+
+.comparisonTable td {
+  padding: var(--space-2) var(--space-2);
+  border-top: 1px solid var(--color-border-dim);
+  text-align: center;
+  color: var(--color-text);
+}
+
+.compareCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.compareCell.featuredCell {
+  background: rgba(90, 166, 66, 0.05);
+}
+
+.compareRow:nth-child(even) td {
+  background: rgba(255,255,255,0.01);
+}
+
+.checkIcon {
+  color: var(--color-online);
+}
+
+.xIcon {
+  color: var(--color-text-muted);
+}
+
+/* Items */
+.itemsSection {
+  margin-bottom: var(--space-12);
+}
+
+.itemsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .itemsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .itemsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.itemCard {
+  text-align: center;
+  padding: var(--space-6) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-base);
+}
+
+.itemCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-border-bright);
+}
+
+.itemIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-4);
+  color: var(--color-primary);
+  background: rgba(90, 166, 66, 0.1);
+  border-radius: var(--radius-md);
+}
+
+.itemIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
+
+.itemName {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.itemDesc {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--color-text-dim);
+  line-height: 1.5;
+  margin-bottom: var(--space-3);
+  flex: 1;
+}
+
+.itemPrice {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-gold);
+  margin-bottom: var(--space-4);
+}
+
+/* Note */
+.note {
+  max-width: 800px;
+  margin: var(--space-8) auto 0;
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.note :global(.info-icon) {
+  flex-shrink: 0;
+  color: var(--color-cyan);
+  margin-top: 2px;
+}
+
+.note h3 {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.note p {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-text-dim);
+  line-height: 1.6;
+}
+
+.note strong {
+  color: var(--color-text);
+}
+
+/* Loading */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  gap: var(--space-4);
+  color: var(--color-text-dim);
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  color: var(--color-primary);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive Table */
+@media (max-width: 1023px) {
+  .comparisonTable th,
+  .comparisonTable td {
+    padding: var(--space-2) var(--space-1);
+    font-size: 11px;
+  }
+}

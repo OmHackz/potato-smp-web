@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d0d"/>
+      <stop offset="100%" style="stop-color:#141414"/>
+    </linearGradient>
+    <pattern id="noise" width="64" height="64" patternUnits="userSpaceOnUse">
+      <image href="data:image/svg+xml,%3Csvg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E" width="64" height="64" opacity="0.03"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#noise)"/>
+  
+  <!-- Decorative elements -->
+  <ellipse cx="100" cy="100" rx="80" ry="60" fill="#5aa642" opacity="0.08"/>
+  <ellipse cx="1100" cy="530" rx="100" ry="80" fill="#e8c547" opacity="0.06"/>
+  
+  <!-- Main content -->
+  <g transform="translate(600, 315)">
+    <!-- Potato mascot -->
+    <ellipse cx="0" cy="-20" rx="70" ry="60" fill="#d4a574" stroke="#8b6b3a" stroke-width="4"/>
+    <ellipse cx="-25" cy="-40" rx="8" ry="10" fill="#8b6b3a" opacity="0.6"/>
+    <ellipse cx="25" cy="-40" rx="8" ry="10" fill="#8b6b3a" opacity="0.6"/>
+    <ellipse cx="-10" cy="5" rx="10" ry="5" fill="#8b6b3a" opacity="0.4"/>
+    <ellipse cx="15" cy="5" rx="10" ry="5" fill="#8b6b3a" opacity="0.4"/>
+    <path d="M0 -90 Q0 -120 30 -120 Q60 -120 60 -80" stroke="#8b6b3a" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <circle cx="55" cy="-122" r="10" fill="#7fc95e"/>
+    
+    <!-- Title -->
+    <text x="0" y="80" text-anchor="middle" font-family="Impact, sans-serif" font-size="64" font-weight="bold" fill="#e0e0e0" letter-spacing="-2" style="font-family: 'Minecraft Ten', Impact, sans-serif;">PotatoSMP</text>
+    <text x="0" y="130" text-anchor="middle" font-family="Verdana, sans-serif" font-size="20" font-weight="bold" fill="#5aa642" letter-spacing="6" text-transform="uppercase">COZY SURVIVAL SMP</text>
+    
+    <!-- Server info -->
+    <g transform="translate(0, 180)">
+      <text x="0" y="0" text-anchor="middle" font-family="Verdana, sans-serif" font-size="18" fill="#a0a0a0">play.potatosmp.net</text>
+      <text x="0" y="30" text-anchor="middle" font-family="Verdana, sans-serif" font-size="14" fill="#787878">Java & Bedrock • 1.20+</text>
+    </g>
+  </g>
+  
+  <!-- Footer badges -->
+  <g transform="translate(600, 560)">
+    <text x="-150" y="0" text-anchor="middle" font-family="Verdana, sans-serif" font-size="12" fill="#787878">Not affiliated with Mojang Studios</text>
+    <text x="150" y="0" text-anchor="middle" font-family="Verdana, sans-serif" font-size="12" fill="#787878">potatosmp.net</text>
+  </g>
+</svg>

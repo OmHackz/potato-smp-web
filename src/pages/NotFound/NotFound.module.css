@@ -1,0 +1,231 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) var(--container-padding);
+  background:
+    radial-gradient(ellipse at center, var(--color-bg-panel) 0%, transparent 70%),
+    var(--color-bg-deep);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.deathScreen {
+  position: relative;
+  z-index: 2;
+  background: var(--color-bg-panel);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-10) var(--space-8);
+  box-shadow:
+    var(--shadow-lg),
+    0 0 60px rgba(90, 166, 66, 0.1),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  animation: deathScreenIn var(--transition-slow) ease-out;
+}
+
+@keyframes deathScreenIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.deathHeader {
+  margin-bottom: var(--space-8);
+}
+
+.youDied {
+  font-family: var(--font-heading);
+  font-size: clamp(48px, 12vw, 72px);
+  font-weight: 400;
+  color: var(--color-red);
+  text-shadow:
+    0 0 20px rgba(255, 85, 85, 0.5),
+    2px 2px 0 rgba(0,0,0,0.5);
+  letter-spacing: -0.02em;
+  animation: shake 0.5s ease-in-out 3;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.respawnTimer {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text-dim);
+  margin-top: var(--space-3);
+}
+
+.respawnTimer span {
+  color: var(--color-gold);
+  animation: countdown 1s steps(3) infinite;
+}
+
+@keyframes countdown {
+  0%, 33% { content: '3'; }
+  34%, 66% { content: '2'; }
+  67%, 100% { content: '1'; }
+}
+
+.deathMessage {
+  margin-bottom: var(--space-8);
+  padding: var(--space-6);
+  background: var(--color-bg-input);
+  border: 1px solid var(--color-border-dim);
+  border-radius: var(--radius-md);
+}
+
+.deathMessage p {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.subMessage {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-text-dim);
+  margin-top: var(--space-2) !important;
+}
+
+.deathStats {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+  padding: var(--space-5);
+  background: var(--color-bg-input);
+  border: 1px solid var(--color-border-dim);
+  border-radius: var(--radius-md);
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  min-width: 80px;
+}
+
+.statLabel {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+
+.statValue {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.respawnBtn {
+  margin-bottom: var(--space-4);
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: var(--shadow-button), 0 0 20px rgba(90, 166, 66, 0.3); }
+  50% { box-shadow: var(--shadow-button-hover), 0 0 30px rgba(90, 166, 66, 0.5); }
+}
+
+.hint {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.hint kbd {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-text);
+  background: var(--color-bg-deep);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-1) var(--space-2);
+  margin: 0 var(--space-1);
+}
+
+/* Particles */
+.particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+}
+
+.particle {
+  position: absolute;
+  bottom: -20px;
+  width: var(--size);
+  height: var(--size);
+  background: var(--color);
+  border-radius: 50%;
+  opacity: 0;
+  left: var(--left);
+  animation: floatUp var(--duration) ease-in var(--delay) infinite;
+  filter: blur(0.5px);
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-120vh) scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .deathScreen {
+    padding: var(--space-8) var(--space-5);
+  }
+
+  .deathStats {
+    gap: var(--space-4);
+    padding: var(--space-4);
+  }
+
+  .stat {
+    min-width: 60px;
+  }
+
+  .statValue {
+    font-size: 16px;
+  }
+}

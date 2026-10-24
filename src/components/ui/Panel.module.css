@@ -1,0 +1,98 @@
+.panel {
+  background: var(--color-bg-panel);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Variants */
+.default {
+  box-shadow: var(--shadow-panel);
+  border: 1px solid var(--color-border);
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, transparent 100%);
+}
+
+.elevated {
+  box-shadow: var(--shadow-lg), 0 0 0 1px var(--color-border-dim);
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, transparent 100%);
+}
+
+.outlined {
+  box-shadow: none;
+  border: 2px solid var(--color-border);
+  background: var(--color-bg-base);
+}
+
+.inventory {
+  box-shadow: var(--shadow-panel);
+  border: 2px solid var(--color-border);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.04) 0%, transparent 40%),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 15px,
+      rgba(255,255,255,0.015) 15px,
+      rgba(255,255,255,0.015) 16px
+    );
+  background-size: 100%, 16px 100%;
+}
+
+/* Padding */
+.p-none { padding: 0; }
+.p-sm { padding: var(--space-3); }
+.p-md { padding: var(--space-5); }
+.p-lg { padding: var(--space-8); }
+
+.header {
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--color-border-dim);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, transparent 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+  overflow: hidden;
+}
+
+.footer {
+  padding: var(--space-4) var(--space-5);
+  border-top: 1px solid var(--color-border-dim);
+  background: linear-gradient(0deg, rgba(255,255,255,0.03) 0%, transparent 100%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+/* Header with icon slot (inventory style) */
+.header.withIcon {
+  padding-left: var(--space-4);
+}
+
+.headerIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-input);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), 0 1px 0 rgba(0,0,0,0.3);
+}
+
+.headerTitle {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  color: var(--color-text);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
